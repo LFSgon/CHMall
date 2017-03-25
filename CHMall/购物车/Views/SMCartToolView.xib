@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SMCartToolView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkd-Hm-Aw4">
+                    <rect key="frame" x="10" y="0.0" width="65" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="jbv-wI-Gw1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" title="全选" image="circle_wxz">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" image="circle_pre"/>
+                    <connections>
+                        <action selector="leftBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="c1Q-Ji-HUl"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计¥198.00元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIe-YT-nKC">
+                    <rect key="frame" x="91" y="15" width="103" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrr-9f-3ck">
+                    <rect key="frame" x="264" y="0.0" width="111" height="48"/>
+                    <color key="backgroundColor" red="0.86274509799999999" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="zrr-9f-3ck" secondAttribute="height" multiplier="171:74" id="2ge-sK-vA0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="结算"/>
+                    <state key="selected" title="删除"/>
+                    <connections>
+                        <action selector="rightBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="XFk-Fd-5SO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zrr-9f-3ck" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="52e-aa-MAg"/>
+                <constraint firstItem="kIe-YT-nKC" firstAttribute="leading" secondItem="mkd-Hm-Aw4" secondAttribute="trailing" constant="16" id="BhF-xt-2GU"/>
+                <constraint firstAttribute="bottom" secondItem="zrr-9f-3ck" secondAttribute="bottom" id="Twq-vo-ZQE"/>
+                <constraint firstItem="mkd-Hm-Aw4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Unj-gY-Yqj"/>
+                <constraint firstItem="mkd-Hm-Aw4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="XO6-HU-m9F"/>
+                <constraint firstAttribute="trailing" secondItem="zrr-9f-3ck" secondAttribute="trailing" id="hyY-Ek-gOV"/>
+                <constraint firstItem="kIe-YT-nKC" firstAttribute="centerY" secondItem="mkd-Hm-Aw4" secondAttribute="centerY" id="or6-9h-RSU"/>
+                <constraint firstAttribute="bottom" secondItem="mkd-Hm-Aw4" secondAttribute="bottom" id="qWo-yL-cSs"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentL" destination="kIe-YT-nKC" id="mDh-5I-teo"/>
+                <outlet property="leftBtn" destination="mkd-Hm-Aw4" id="0uI-iM-BWM"/>
+                <outlet property="rightBtn" destination="zrr-9f-3ck" id="iiF-6v-Hxn"/>
+            </connections>
+            <point key="canvasLocation" x="27.5" y="13"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="circle_pre" width="20" height="20"/>
+        <image name="circle_wxz" width="20" height="20"/>
+    </resources>
+</document>

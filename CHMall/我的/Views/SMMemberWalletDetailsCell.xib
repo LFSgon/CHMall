@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SMMemberWalletDetailsCell" rowHeight="82" id="KGk-i7-Jjw" customClass="SMMemberWalletDetailsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单消费" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCN-V0-8yH">
+                        <rect key="frame" x="15" y="15" width="62" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥99.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtx-AD-Y2e">
+                        <rect key="frame" x="255" y="15" width="50" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.84313725490000002" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VY-F9-4pI">
+                        <rect key="frame" x="0.0" y="62" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="FY9-bR-QLJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-12-14 10:23:56" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bE-Th-4y9">
+                        <rect key="frame" x="185" y="34" width="120" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="1VY-F9-4pI" secondAttribute="trailing" id="1Ni-k6-lcK"/>
+                    <constraint firstAttribute="bottom" secondItem="2bE-Th-4y9" secondAttribute="bottom" constant="15" id="3v2-F3-gNZ"/>
+                    <constraint firstAttribute="bottom" secondItem="1VY-F9-4pI" secondAttribute="bottom" id="8OP-9M-RLi"/>
+                    <constraint firstAttribute="trailing" secondItem="Qtx-AD-Y2e" secondAttribute="trailing" constant="15" id="E7J-hZ-uGX"/>
+                    <constraint firstItem="kCN-V0-8yH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="MB7-OH-cvC"/>
+                    <constraint firstAttribute="trailing" secondItem="2bE-Th-4y9" secondAttribute="trailing" constant="15" id="Y13-a7-nuI"/>
+                    <constraint firstItem="1VY-F9-4pI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="byd-so-VFw"/>
+                    <constraint firstItem="kCN-V0-8yH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="lvP-Kx-kOp"/>
+                    <constraint firstItem="Qtx-AD-Y2e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="rwY-Qg-sD7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="priceL" destination="Qtx-AD-Y2e" id="UNU-SE-hKZ"/>
+                <outlet property="sortL" destination="kCN-V0-8yH" id="gvE-oc-vgl"/>
+                <outlet property="timeL" destination="2bE-Th-4y9" id="Gxn-Sc-26M"/>
+            </connections>
+            <point key="canvasLocation" x="42" y="73"/>
+        </tableViewCell>
+    </objects>
+</document>

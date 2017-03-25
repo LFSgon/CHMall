@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SMPickerView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ev0-lr-4On">
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tQO-pI-wJ2">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="216" id="BQG-Kz-pQQ"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="BQG-Kz-pQQ"/>
+                                </mask>
+                            </variation>
+                        </pickerView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85a-f1-A09">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="NsQ-nw-2j8"/>
+                                <constraint firstAttribute="height" constant="30" id="WXD-f9-7QY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" red="0.98431372549999996" green="0.34509803919999998" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="nextAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="P3o-d4-D2C"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNs-x6-qMC">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="N14-oV-gjS"/>
+                                <constraint firstAttribute="width" constant="60" id="WfL-VY-BTf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.98431372549999996" green="0.34509803919999998" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="jVQ-P3-KWR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="tQO-pI-wJ2" secondAttribute="trailing" id="0hH-c0-qIE"/>
+                        <constraint firstItem="tQO-pI-wJ2" firstAttribute="top" secondItem="QNs-x6-qMC" secondAttribute="bottom" constant="8" id="14R-TP-Ca5"/>
+                        <constraint firstItem="QNs-x6-qMC" firstAttribute="leading" secondItem="Ev0-lr-4On" secondAttribute="leading" constant="12" id="1ag-6P-cy5"/>
+                        <constraint firstAttribute="bottom" secondItem="tQO-pI-wJ2" secondAttribute="bottom" id="4HU-bj-38W"/>
+                        <constraint firstItem="tQO-pI-wJ2" firstAttribute="leading" secondItem="Ev0-lr-4On" secondAttribute="leading" id="CFl-t9-7dD"/>
+                        <constraint firstItem="QNs-x6-qMC" firstAttribute="top" secondItem="Ev0-lr-4On" secondAttribute="top" constant="8" id="G2a-1e-n5T"/>
+                        <constraint firstItem="85a-f1-A09" firstAttribute="top" secondItem="Ev0-lr-4On" secondAttribute="top" constant="8" id="TqB-gW-qj3"/>
+                        <constraint firstAttribute="trailing" secondItem="85a-f1-A09" secondAttribute="trailing" constant="12" id="lm0-Km-92O"/>
+                        <constraint firstAttribute="height" constant="216" id="ySs-nv-jGj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ev0-lr-4On" secondAttribute="trailing" id="dIj-Jy-6vs"/>
+                <constraint firstItem="Ev0-lr-4On" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nn0-66-b9y"/>
+                <constraint firstAttribute="bottom" secondItem="Ev0-lr-4On" secondAttribute="bottom" id="qwK-ar-0eK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="Ev0-lr-4On" id="LT8-bk-bX4"/>
+                <outlet property="cancelBtn" destination="QNs-x6-qMC" id="IJC-ZJ-mJk"/>
+                <outlet property="nextBtn" destination="85a-f1-A09" id="WOh-Uh-LQ4"/>
+                <outlet property="pickerView" destination="tQO-pI-wJ2" id="qJO-x0-2W4"/>
+            </connections>
+        </view>
+    </objects>
+</document>

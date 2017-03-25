@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SMHomeGoodsItemToolView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kd5-0X-AId">
+                    <rect key="frame" x="250" y="0.0" width="125" height="58"/>
+                    <color key="backgroundColor" red="0.86274509799999999" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="立即购买">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buyBtnAction" destination="iN0-l3-epB" eventType="touchUpInside" id="aB7-Zu-A2w"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKX-Qd-o7G">
+                    <rect key="frame" x="0.0" y="0.0" width="120.5" height="58"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                    <state key="normal" title="收藏" image="star_sc">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="已收藏" image="star_sc_pre"/>
+                    <connections>
+                        <action selector="collectBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="kIf-9J-pDv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbq-71-mY0">
+                    <rect key="frame" x="120.5" y="0.0" width="129.5" height="58"/>
+                    <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="加入购物车">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addBtnAction" destination="iN0-l3-epB" eventType="touchUpInside" id="y6c-2v-ISY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aKX-Qd-o7G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1rN-nw-wIZ"/>
+                <constraint firstItem="Fbq-71-mY0" firstAttribute="height" secondItem="aKX-Qd-o7G" secondAttribute="height" id="3RB-lK-ERQ"/>
+                <constraint firstAttribute="bottom" secondItem="Kd5-0X-AId" secondAttribute="bottom" id="CHI-Cu-56W"/>
+                <constraint firstItem="Kd5-0X-AId" firstAttribute="leading" secondItem="Fbq-71-mY0" secondAttribute="trailing" id="HK7-0y-g4d"/>
+                <constraint firstItem="Kd5-0X-AId" firstAttribute="width" secondItem="aKX-Qd-o7G" secondAttribute="width" multiplier="240:232" id="Joo-81-LTQ"/>
+                <constraint firstAttribute="trailing" secondItem="Kd5-0X-AId" secondAttribute="trailing" id="T3i-27-avz"/>
+                <constraint firstItem="Fbq-71-mY0" firstAttribute="leading" secondItem="aKX-Qd-o7G" secondAttribute="trailing" id="VYY-7k-EJr"/>
+                <constraint firstItem="Kd5-0X-AId" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="X7g-3o-fwW"/>
+                <constraint firstItem="aKX-Qd-o7G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ayU-PZ-eGN"/>
+                <constraint firstAttribute="bottom" secondItem="aKX-Qd-o7G" secondAttribute="bottom" id="bJ3-5b-xdW"/>
+                <constraint firstItem="Fbq-71-mY0" firstAttribute="centerY" secondItem="Kd5-0X-AId" secondAttribute="centerY" id="dYW-r4-6cA"/>
+                <constraint firstItem="Kd5-0X-AId" firstAttribute="height" secondItem="aKX-Qd-o7G" secondAttribute="height" id="n5U-NS-UTg"/>
+                <constraint firstItem="Fbq-71-mY0" firstAttribute="width" secondItem="aKX-Qd-o7G" secondAttribute="width" multiplier="250:232" id="zEl-lp-YwE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="52.5" y="-224"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="star_sc" width="20" height="20"/>
+        <image name="star_sc_pre" width="20" height="20"/>
+    </resources>
+</document>

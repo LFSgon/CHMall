@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SMHomeGoodsPaySelectFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金额:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3Y-K6-v3Z">
+                    <rect key="frame" x="45" y="18" width="38" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqS-r6-cvh">
+                    <rect key="frame" x="93" y="18" width="43" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lm-V8-zbx">
+                    <rect key="frame" x="244" y="6" width="116" height="43"/>
+                    <color key="backgroundColor" red="1" green="0.83137254900000002" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3Lm-V8-zbx" secondAttribute="height" multiplier="175:65" id="HJI-M0-WTg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="去支付">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="rechargeBtnAction" destination="iN0-l3-epB" eventType="touchUpInside" id="k7c-z7-JIY"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBc-Eq-tSa">
+                    <rect key="frame" x="0.0" y="54" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="UyW-TU-0SD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZqS-r6-cvh" firstAttribute="leading" secondItem="x3Y-K6-v3Z" secondAttribute="trailing" constant="10" id="D8C-jS-3h4"/>
+                <constraint firstItem="NBc-Eq-tSa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="F27-AH-TeW"/>
+                <constraint firstItem="x3Y-K6-v3Z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="Lj5-5i-2RH"/>
+                <constraint firstAttribute="trailing" secondItem="NBc-Eq-tSa" secondAttribute="trailing" id="QgC-U4-KP9"/>
+                <constraint firstItem="ZqS-r6-cvh" firstAttribute="centerY" secondItem="x3Y-K6-v3Z" secondAttribute="centerY" id="RcG-E2-OlZ"/>
+                <constraint firstItem="3Lm-V8-zbx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="Rr9-ot-S8s"/>
+                <constraint firstAttribute="bottom" secondItem="3Lm-V8-zbx" secondAttribute="bottom" constant="6" id="Xcz-qk-8Iq"/>
+                <constraint firstItem="x3Y-K6-v3Z" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZoQ-Cw-QCS"/>
+                <constraint firstAttribute="trailing" secondItem="3Lm-V8-zbx" secondAttribute="trailing" constant="15" id="ada-gk-hMY"/>
+                <constraint firstAttribute="bottom" secondItem="NBc-Eq-tSa" secondAttribute="bottom" id="gQ0-Md-sNX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="sunmL" destination="ZqS-r6-cvh" id="rpy-BD-KGJ"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="-80.5"/>
+        </view>
+    </objects>
+</document>

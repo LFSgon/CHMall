@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SMHomeGoodsItemFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T87-G6-Q1Q">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MD1-xe-iqm">
+                            <rect key="frame" x="132" y="6" width="111" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="avN-jH-zjK"/>
+                                <constraint firstAttribute="width" secondItem="MD1-xe-iqm" secondAttribute="height" multiplier="226:65" id="mTb-9T-1Mp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="查看全部评价">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="nextBtnAction" destination="iN0-l3-epB" eventType="touchUpInside" id="Fy9-0f-CC8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="MD1-xe-iqm" firstAttribute="centerX" secondItem="T87-G6-Q1Q" secondAttribute="centerX" id="hsX-QR-u9e"/>
+                        <constraint firstItem="MD1-xe-iqm" firstAttribute="centerY" secondItem="T87-G6-Q1Q" secondAttribute="centerY" id="nZv-sx-cAO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="T87-G6-Q1Q" secondAttribute="trailing" id="9Fl-zY-U4S"/>
+                <constraint firstItem="T87-G6-Q1Q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="D7u-1F-dnP"/>
+                <constraint firstItem="T87-G6-Q1Q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QiY-JI-09u"/>
+                <constraint firstAttribute="bottom" secondItem="T87-G6-Q1Q" secondAttribute="bottom" id="ft6-Ee-hKV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nextBtn" destination="MD1-xe-iqm" id="DHF-B5-tEX"/>
+            </connections>
+            <point key="canvasLocation" x="2" y="118"/>
+        </view>
+    </objects>
+</document>

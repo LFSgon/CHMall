@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SMHomeGoodsPaySelectHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PM6-67-8e1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总计: 199元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jms-pz-X7T">
+                            <rect key="frame" x="148" y="23" width="80" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单已经提交成功,请您尽快付款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MC0-ua-I0w">
+                            <rect key="frame" x="79" y="51" width="219" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_xz" translatesAutoresizingMaskIntoConstraints="NO" id="oJg-jd-WxZ">
+                            <rect key="frame" x="52" y="52" width="17" height="17"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wX-mB-miU">
+                            <rect key="frame" x="0.0" y="91" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="XW3-xA-7e8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="MC0-ua-I0w" secondAttribute="bottom" constant="23" id="7LU-7y-HLO"/>
+                        <constraint firstItem="jms-pz-X7T" firstAttribute="centerX" secondItem="PM6-67-8e1" secondAttribute="centerX" id="BZW-yU-1e9"/>
+                        <constraint firstAttribute="bottom" secondItem="2wX-mB-miU" secondAttribute="bottom" id="Mpb-rk-zRp"/>
+                        <constraint firstItem="MC0-ua-I0w" firstAttribute="centerX" secondItem="jms-pz-X7T" secondAttribute="centerX" id="SpL-af-h9B"/>
+                        <constraint firstItem="jms-pz-X7T" firstAttribute="top" secondItem="PM6-67-8e1" secondAttribute="top" constant="23" id="Ves-XE-3Se"/>
+                        <constraint firstItem="MC0-ua-I0w" firstAttribute="leading" secondItem="oJg-jd-WxZ" secondAttribute="trailing" constant="10" id="bbk-wa-2Wj"/>
+                        <constraint firstItem="2wX-mB-miU" firstAttribute="leading" secondItem="PM6-67-8e1" secondAttribute="leading" id="iNj-Xo-3ve"/>
+                        <constraint firstAttribute="trailing" secondItem="2wX-mB-miU" secondAttribute="trailing" id="osb-6W-zzH"/>
+                        <constraint firstItem="oJg-jd-WxZ" firstAttribute="centerY" secondItem="MC0-ua-I0w" secondAttribute="centerY" id="xbG-DC-08i"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PM6-67-8e1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1r3-8O-YKe"/>
+                <constraint firstItem="PM6-67-8e1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="83H-e6-Sxl"/>
+                <constraint firstAttribute="bottom" secondItem="PM6-67-8e1" secondAttribute="bottom" id="RHo-fG-PZQ"/>
+                <constraint firstAttribute="trailing" secondItem="PM6-67-8e1" secondAttribute="trailing" id="eSb-I7-8Zm"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="sumL" destination="jms-pz-X7T" id="AVH-B2-EN5"/>
+            </connections>
+            <point key="canvasLocation" x="-20.5" y="-202"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nav_xz" width="17" height="17"/>
+    </resources>
+</document>

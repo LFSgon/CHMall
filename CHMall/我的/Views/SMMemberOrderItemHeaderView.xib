@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SMMemberOrderItemHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAw-aw-WHP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FZ0010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tdi-Dc-8cd">
+                            <rect key="frame" x="67" y="9.5" width="47" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="待付款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYG-gi-OVU">
+                            <rect key="frame" x="320" y="9.5" width="40" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单号:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5W-VM-1EA">
+                            <rect key="frame" x="15" y="9.5" width="44" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Tdi-Dc-8cd" firstAttribute="centerY" secondItem="N5W-VM-1EA" secondAttribute="centerY" id="61t-CT-cNp"/>
+                        <constraint firstItem="Tdi-Dc-8cd" firstAttribute="leading" secondItem="N5W-VM-1EA" secondAttribute="trailing" constant="8" id="Ddc-pm-CuO"/>
+                        <constraint firstItem="N5W-VM-1EA" firstAttribute="leading" secondItem="XAw-aw-WHP" secondAttribute="leading" constant="15" id="Xfo-Qj-WrO"/>
+                        <constraint firstItem="N5W-VM-1EA" firstAttribute="centerY" secondItem="XAw-aw-WHP" secondAttribute="centerY" id="kut-UV-XhB"/>
+                        <constraint firstItem="tYG-gi-OVU" firstAttribute="centerY" secondItem="N5W-VM-1EA" secondAttribute="centerY" id="kxI-Vu-85w"/>
+                        <constraint firstAttribute="trailing" secondItem="tYG-gi-OVU" secondAttribute="trailing" constant="15" id="zSq-IW-e8c"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XAw-aw-WHP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0w4-Mx-cqx"/>
+                <constraint firstItem="XAw-aw-WHP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1ZW-Ih-yBl"/>
+                <constraint firstAttribute="bottom" secondItem="XAw-aw-WHP" secondAttribute="bottom" id="QBJ-q8-f5s"/>
+                <constraint firstAttribute="trailing" secondItem="XAw-aw-WHP" secondAttribute="trailing" id="Rz2-hP-OZM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="orderL" destination="Tdi-Dc-8cd" id="KUu-wA-KmU"/>
+                <outlet property="statusL" destination="tYG-gi-OVU" id="2IJ-50-3ou"/>
+            </connections>
+            <point key="canvasLocation" x="19.5" y="-51.5"/>
+        </view>
+    </objects>
+</document>
